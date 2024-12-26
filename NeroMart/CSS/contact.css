@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: rgb(255, 255, 0);
+    color: #000000;
+}
+
+.logo_nav {
+    width: 75px;
+    height: auto;
+    position: relative;
+    right: 4rem;
+}
+
+/*Body*/
+
+#wlc {
+    color: white;
+    position: absolute;
+    top: 22rem;
+    left: 25rem;
+    font-size: 50px;
+}
+
+
+
+button.btn_contact {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #009e22;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 20px;
+    position: absolute;
+    top: 27rem;
+    left: 33rem;
+
+}
+  
+  button.btn_contact .button-image {
+    width: 35px;
+    height: auto;
+    border-radius: 30px;
+}
+  
+  button.btn_contact:hover {
+    background-color: #013b0e;
+}
+  
+
+.image1 {
+    border-radius: 200px ;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: 45rem;
+    top: 10rem;
+
+}
+
+.txt_about1 {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    position: absolute;
+    top: 9rem;
+    left: 4rem;
+    font-size: 17px;
+}
+
+#brand {
+    color: red;
+}
+
+.image2{
+    border-radius: 200px ;
+    width: 500px;
+    position: absolute;
+    top: 45rem;
+    left: 4rem;
+    border-radius: 50px;
+}
+
+.txt_about2 {
+    position: absolute;
+    left: 40rem;
+    top: 39rem;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+
+
+#brand2 {
+    color: yellow;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.txt_about3 {
+    position: absolute;
+    color: white;
+    top: 68rem;
+    left: 22rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.form-container {
+    position: absolute;
+    margin-left: 47rem;
+    top: 8rem;
+    background: rgba(255, 255, 255, 0); /* Transparence */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    margin-right: 20px;
+}
+
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+.name2 {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.prenom1 {
+    position: absolute;
+    left: 15rem;
+    top: 1.3rem;
+}
+.prenom2 {
+    position: absolute;
+    left: 15rem;
+    top: 2.9rem;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.phone2 {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.message2 {
+    width: 92%;
+    height: 7rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: yellow;
+}
+
+
+.contactez-nous {
+    color: yellow;
+    position: absolute;
+    top:  10rem;
+    left: 6rem;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.paragraphe_contact {
+    color: white;
+    position: absolute;
+    top: 14rem;
+    left: 6rem;
+    font-size: 18px;
+}
+
+                            /***************** Footer *****************/
+
+
+.footer {
+    background-color: #3a3a3a;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    top: 36.6rem;
+}
+
+.logo_footer{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 72rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    list-style: none;
+}
+
+.social-media {
+    margin-left: 65rem;
+    display: flex;
+    gap: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/*Alert Java*/
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 28rem;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out;
+}
+.alert.show {
+    display: block;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/**/
+
+/* Toggle Button */
+.menu-toggle {
+    display: none; /* Masqué par défaut */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Bouton placé à droite */
+    top: 20px; /* Ajustez selon la hauteur souhaitée */
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Par défaut, le menu est affiché */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/* Cacher le menu sur petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        background: rgb(255, 255, 0);
+        color: #000;
+    }
+}
+
+
+/* Général */
+
+
+
+/* Responsivité pour tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo_nav {
+        width: 60px;
+        right: 2rem;
+    }
+
+    header ul {
+        gap: 10px; /* Réduit l'espacement entre les éléments */
+    }
+
+
+
+    .footer {
+        top: 75rem;
+    }
+
+    .logo_footer {
+        right: 60rem;
+    }
+
+    .social-media {
+        margin-left: 50rem;
+    }
+}
+
+/* Responsivité pour mobiles (moins de 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo_nav {
+        width: 70px;
+        right: 0;
+    }
+
+
+    .form-container {
+        position: absolute;
+        top: 50rem;
+        right: -5rem;
+    }
+
+    .prenom2, .prenom1 {
+        position: absolute;
+        top: -1rem;
+        margin-left: -5rem;
+    }
+
+    .name1, .name2 {
+        position: absolute;
+        top: -5rem;
+        right: 8.8rem;
+    }
+
+    .phone1 {
+
+    }
+
+    .phone2 {
+        width: 60%;
+        padding: 10px;
+        margin-left: 6.5rem;
+    }
+
+
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+        top: 110rem;
+    }
+
+    .logo_footer {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .social-media {
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Ajout d'une marge au body pour le séparer du header */
+    body {
+        margin-top: 80px; /* Ajustez la valeur selon le besoin */
+    }
+
+}

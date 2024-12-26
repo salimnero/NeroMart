@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CO+Guides&display=swap');
+
+
+header {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #000000;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: rgb(255, 255, 0);
+    color: #000000;
+}
+
+.logo_nav {
+    width: 75px;
+    height: auto;
+    position: relative;
+    right: 4rem;
+}
+
+/*********Body Form*********/
+
+
+
+#content-wrapper{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    top: 10rem;
+}
+
+.column{
+	width: 600px;
+	padding: 10px;
+
+}
+
+#featured{
+	max-width: 500px;
+	max-height: 600px;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid black;
+
+}
+
+.thumbnail{
+	object-fit: cover;
+	max-width: 180px;
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border: 2px solid black;
+
+}
+
+.thumbnail:hover{
+	opacity:1;
+}
+
+
+#slide-wrapper{
+	max-width: 500px;
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+}
+
+#slider{
+	width: 440px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+
+}
+
+#slider::-webkit-scrollbar {
+		width: 8px;
+
+}
+
+#slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+
+}
+ 
+#slider::-webkit-scrollbar-thumb {
+  background-color: #dede2e;
+  outline: 1px solid slategrey;
+   border-radius: 100px;
+
+}
+
+#slider::-webkit-scrollbar-thumb:hover{
+    background-color: #18b5ce;
+}
+
+.arrow{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.arrow:hover{
+	opacity: .5;
+	width: 35px;
+	height: 35px;
+}
+
+
+.awesome {
+    position: absolute;
+    top: 5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.description_achat {
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn_achat {
+    background-color: yellow; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 10px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn_achat:hover {
+    background-color: rgb(181, 181, 0);
+}
+
+.btn_number {
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    background-color: #585858;
+    color: white;
+}
+
+
+#content-wrapper2{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    top: 50rem;
+}
+
+#content-wrapper3{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    position: absolute;
+    top: 90rem;
+}
+
+#commande_whatsapp {
+    display: flex;
+    position: absolute;
+    top: 25.5rem;
+    margin-left: 57.5rem;
+    gap: 8px;
+}
+
+#cmd {
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.form-container {
+    position: absolute;
+    margin-left: 60rem;
+    top: 8rem;
+    background: yellow;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.btn_whatsapp {
+    position: relative;
+    left: 7rem;
+    align-items: center;
+}
+
+/*********Footer*********/
+
+.footer {
+    background-color: #3a3a3a;
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    top: 132rem;
+}
+
+.logo_footer{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 72rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    list-style: none;
+}
+
+.social-media {
+    margin-left: 65rem;
+    display: flex;
+    gap: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: yellow;
+}
