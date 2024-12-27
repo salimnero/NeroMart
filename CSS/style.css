@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: rgb(255, 255, 0);
+    color: #000000;
+}
+
+.logo_nav {
+    width: 75px;
+    height: auto;
+    position: relative;
+    right: 4rem;
+}
+
+/*Body*/
+
+#wlc {
+    color: white;
+    position: absolute;
+    top: 22rem;
+    left: 25rem;
+    font-size: 50px;
+}
+
+
+
+button.btn_contact {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #009e22;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 20px;
+    position: absolute;
+    top: 27rem;
+    left: 33rem;
+
+}
+  
+  button.btn_contact .button-image {
+    width: 35px;
+    height: auto;
+    border-radius: 30px;
+}
+  
+  button.btn_contact:hover {
+    background-color: #013b0e;
+}
+  
+
+
+
+                            /***************** Footer *****************/
+
+
+.footer {
+    background-color: #3a3a3a;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    top: 80rem;
+}
+
+.logo_footer{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 72rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    list-style: none;
+}
+
+.social-media {
+    margin-left: 65rem;
+    display: flex;
+    gap: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+/* Toggle Button */
+.menu-toggle {
+    display: none; /* Masqué par défaut */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Bouton placé à droite */
+    top: 20px; /* Ajustez selon la hauteur souhaitée */
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Par défaut, le menu est affiché */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/* Cacher le menu sur petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        background: rgb(255, 255, 0);
+        color: #000;
+    }
+}
+
+
+/* Responsivité pour tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo_nav {
+        width: 60px;
+        right: 2rem;
+    }
+
+    header ul {
+        gap: 10px; /* Réduit l'espacement entre les éléments */
+    }
+
+    .footer {
+        top: 75rem;
+    }
+
+    .logo_footer {
+        right: 60rem;
+    }
+
+    .social-media {
+        margin-left: 50rem;
+    }
+
+    #wlc{
+        position: absolute;
+        left: 0rem;
+        top: 10rem;
+    }
+
+    .contact_button{
+        position: relative;
+        right: 20%;
+
+    }
+
+    button .button-image {
+        width: 40px;
+        height: auto;
+    }
+    
+    .button-text {
+        font-size: 15px;
+    }
+
+}
+
+
+/* Responsivité pour mobiles (moins de 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo_nav {
+        width: 70px;
+        right: 0;
+    }
+
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+        top: 80rem;
+    }
+
+    .logo_footer {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .social-media {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    #wlc{
+        position: absolute;
+        left: 1rem;
+        top: 10rem;
+        text-align: center;
+    }
+
+    .contact_button{
+        position: relative;
+        top: -15vh;
+        right: 105%;;
+        padding: 2px 30px;
+
+    }
+
+    button .button-image {
+        width: 40px;
+        height: auto;
+    }
+    
+    .button-text {
+        font-size: 15px;
+    }
+
+}
+
+

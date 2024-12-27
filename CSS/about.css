@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: rgb(255, 255, 0);
+    color: #000000;
+}
+
+.logo_nav {
+    width: 75px;
+    height: auto;
+    position: relative;
+    right: 4rem;
+}
+
+/*Body*/
+
+.image1 {
+    border-radius: 200px ;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    left: 45rem;
+    top: 10rem;
+
+}
+
+.txt_about1 {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    position: absolute;
+    top: 9rem;
+    left: 4rem;
+    font-size: 17px;
+}
+
+#brand {
+    color: red;
+}
+
+.image2{
+    border-radius: 200px ;
+    width: 500px;
+    position: absolute;
+    top: 45rem;
+    left: 4rem;
+    border-radius: 50px;
+}
+
+.txt_about2 {
+    position: absolute;
+    left: 40rem;
+    top: 39rem;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+}
+
+
+#brand2 {
+    color: yellow;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.txt_about3 {
+    position: absolute;
+    color: white;
+    top: 68rem;
+    left: 22rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+                            /***************** Footer *****************/
+
+
+.footer {
+    background-color: #3a3a3a;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    top: 80rem;
+}
+
+.logo_footer{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 72rem;
+}
+
+.footer-links {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    list-style: none;
+}
+
+.social-media {
+    margin-left: 65rem;
+    display: flex;
+    gap: 10px;
+}
+
+#link {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/**/
+
+/* Toggle Button */
+.menu-toggle {
+    display: none; /* Masqué par défaut */
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Bouton placé à droite */
+    top: 20px; /* Ajustez selon la hauteur souhaitée */
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Par défaut, le menu est affiché */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/* Cacher le menu sur petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        background: rgb(255, 255, 0);
+        color: #000;
+    }
+}
+
+
+/* Général */
+
+
+
+/* Responsivité pour tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .logo_nav {
+        width: 60px;
+        right: 2rem;
+    }
+
+    header ul {
+        gap: 10px; /* Réduit l'espacement entre les éléments */
+    }
+
+    .image1 {
+        width: 400px;
+        left: 35rem;
+        top: 8rem;
+    }
+
+    .txt_about1 {
+        font-size: 15px;
+        left: 2rem;
+        top: 8rem;
+    }
+
+    .image2 {
+        width: 400px;
+        left: 2rem;
+        top: 38rem;
+    }
+
+    .txt_about2 {
+        font-size: 15px;
+        left: 30rem;
+        top: 35rem;
+    }
+
+    .txt_about3 {
+        font-size: 16px;
+        top: 65rem;
+        left: 15rem;
+    }
+
+    .footer {
+        top: 75rem;
+    }
+
+    .logo_footer {
+        right: 60rem;
+    }
+
+    .social-media {
+        margin-left: 50rem;
+    }
+}
+
+/* Responsivité pour mobiles (moins de 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .logo_nav {
+        width: 70px;
+        right: 0;
+    }
+
+    .image1, .image2 {
+        width: 100%;
+        border-radius: 20px;
+        position: static;
+        margin: 20px 0;
+    }
+
+    .txt_about1, .txt_about2, .txt_about3 {
+        font-size: 14px;
+        position: static;
+        margin: 10px 20px;
+    }
+
+    #brand {
+        font-size: 16px;
+    }
+
+    #brand2 {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+        top: 0;
+    }
+
+    .logo_footer {
+        position: static;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .social-media {
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Ajout d'une marge au body pour le séparer du header */
+    body {
+        margin-top: 80px; /* Ajustez la valeur selon le besoin */
+    }
+
+    /* Vous pouvez également ajuster les images et autres éléments pour plus de flexibilité */
+    .image1, .image2 {
+        margin-top: 20px; /* Ajustez cette valeur en fonction de la disposition */
+    }
+
+    /* Texte (si nécessaire, ajustez également les autres éléments) */
+    .txt_about1, .txt_about2, .txt_about3 {
+        margin-top: 20px; /* Évitez que le texte soit trop proche du haut */
+    }
+}
+
